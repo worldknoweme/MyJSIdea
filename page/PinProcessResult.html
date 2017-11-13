@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>密码键盘模块测试进度</title>
+    <link rel="stylesheet" href="css/header.css">
+    <!-- moduleStyle.css 是不同模块测试页面的通用样式 -->
+    <link rel="stylesheet" href="css/moduleStyle.css">
+    <link rel="stylesheet" href="css/simpleAlert.css">
+    <link rel="stylesheet" href="css/flows.css">
+    <script src="../lib/jquery/jquery-1.10.2.min.js"></script>
+    <script src="../js/hotkey.js"></script>
+    <script src="../js/countDown.js"></script>
+    <script src="../js/Utils.js"></script>
+    <script src="../js/simulator.js"></script>
+    <script src="../js/application.js"></script>
+    <script src="../js/livingBroadcast.js"></script>
+    <script src="../lib/jquery/jquery.iosslider.js"></script>
+    <script src="../lib/inspur/js/inspur.datetime-1.0.0.js"></script>
+    <script src="../lib/jquery/jquery.timers.js"></script>
+
+    <script src="js/createHeader.js"></script>
+
+    <script src="js/simpleAlert.js"></script>
+    <script src="js/createSimpleAlert.js"></script>
+    <script src="js/createFooter.js"></script>
+    <style>
+        .countdown-container { visibility: hidden; }
+    </style>
+
+</head>
+<body class="bgstyle">
+<div id="header">
+    <!-- create header by createHeader.js -->
+</div>
+<div id="container">
+    <span class="tip_words">当前检测模块:&nbsp;<span>密码键盘</span></span>
+
+
+    <div class="progress_container">
+        <span style="vertical-align:top">总体进度&nbsp;</span>
+            <span class="progressbg">
+                <img class="inner_bar"/></span>
+        </span>&nbsp
+        <span id="process_num">33%</span>
+    </div>
+
+    <table id="info_table">
+
+    </table>
+</div> <!-- end report_table-->
+</div>
+
+
+</body>
+<script>
+    //构建底部按钮组
+    fillHtml();
+    //人机交互项配置
+    initAlert(33,"PIN",true,false,4);
+</script>
+</html>
